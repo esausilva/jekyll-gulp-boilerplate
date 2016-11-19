@@ -1,0 +1,40 @@
+---
+layout: base
+title: Home
+canonical: http://yourusername.github.io/project
+---
+<h1>Home</h1>
+
+<p>Alcatra pork chop swine, pig ball tip doner fatback rump ribeye t-bone strip steak tenderloin venison picanha frankfurter. Fatback short 
+  ribs leberkas t-bone pork chop pork loin beef ribs salami brisket pancetta shankle tongue kielbasa drumstick. Beef short ribs ham t-bone 
+  ground round. Ham hock pig frankfurter bacon, sausage short ribs short loin beef ribs burgdoggen. Burgdoggen pastrami kevin bresaola cupim 
+  pancetta. Brisket salami drumstick ham hock prosciutto, kielbasa short ribs rump pork chop biltong meatball.</p>
+
+<div class="row">
+  <div class="col-md-6">
+    <h2>Column 1</h2>
+    <p>Bacon ipsum dolor amet doner shoulder beef tongue pork belly. Pork belly pork burgdoggen tenderloin. Boudin picanha t-bone, 
+    meatball cow short loin flank ground round beef. Doner corned beef shankle salami filet mignon, ham hock pork loin pork belly meatloaf.</p>
+  </div>
+  <div class="col-md-6">
+    <h2>Column 2</h2>
+    <p>Bacon ipsum dolor amet doner shoulder beef tongue pork belly. Pork belly pork burgdoggen tenderloin. Boudin picanha t-bone, 
+    meatball cow short loin flank ground round beef. Doner corned beef shankle salami filet mignon, ham hock pork loin pork belly meatloaf.</p>
+  </div>
+</div>
+
+<h2>Posts</h2>
+
+<ul>
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+<h2>Data from sample json file</h2>
+
+<ul>
+  {% for sample in site.data.sample %}
+    <li>{{ sample.food }}</li>
+  {% endfor %}
+</ul>

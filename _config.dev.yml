@@ -1,0 +1,3 @@
+baseurl: ""
+jekyll-minifier:
+  exclude: ["*.css","*.html","*.js"]
