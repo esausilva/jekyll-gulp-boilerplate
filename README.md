@@ -40,7 +40,7 @@ As this is just a Jekyll project, you can use any of the commands listed in thei
 
 ## Deploy with Gulp to GitHub Pages (Production Mode)
 
-To accomplish this I am using [gulp-gh-pages](https://github.com/rowoot/gulp-gh-pages).
+To accomplish this I am using [gulp-gh-pages](https://github.com/rowoot/gulp-gh-pages) and the final site will have HTML, CSS and Javascript minified.
 
 In a nutshell, you need to have your project in GitHub and deploy to to a *gh-pages* branch. Then to deploy just run 
 
