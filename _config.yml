@@ -8,7 +8,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Jekyll Gulp Boilerplate
 email: esausilva85@gmail.com
-description: A biolerplate project including full setup for Jekyll, GulpJS, SASS, PostCSS, BrowserSync, Autoprefixer and deploy to GitHub Pages using Gulp.
+description: A boilerplate project including full setup for Jekyll, GulpJS, SASS, PostCSS, BrowserSync, Autoprefixer and deploy to GitHub Pages using Gulp.
 baseurl: "/project" # the subpath of your site, e.g. /blog
 url: "http://yourusername.github.io/project" # the base hostname & protocol for your site, e.g. http://example.com
 

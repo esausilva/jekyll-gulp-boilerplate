@@ -2,13 +2,13 @@
 jekyll-gulp-boilerplate
 =======================
 
-A biolerplate project including full setup for Jekyll, GulpJS, SASS, PostCSS, BrowserSync, Autoprefixer and deploy to GitHub Pages using Gulp.
+A boilerplate project including full setup for Jekyll, GulpJS, SASS, PostCSS, BrowserSync, Autoprefixer and deploy to GitHub Pages using Gulp.
 
-The biolerplate is loaded with Bootstrap and jQuery (via CDN) to get you started with your projects. I have also included some SEO optimizations and [Open Graph](http://ogp.me/) tags / [Twitter Cards](https://dev.twitter.com/cards/overview) tags to tell Facebook and Twitter how shares to your site should display (**Note:** Look at `_includes/metas.html` and change accordingly).
+The boilerplate is loaded with Bootstrap and jQuery (via CDN) to get you started with your projects. I have also included some SEO optimizations and [Open Graph](http://ogp.me/) tags / [Twitter Cards](https://dev.twitter.com/cards/overview) tags to tell Facebook and Twitter how shares to your site should display (**Note:** Look at `_includes/metas.html` and change accordingly).
 
 ## System Preparation
 
-To use this starter biolerplate project, you'll need the following things installed on your machine.
+To use this starter boilerplate project, you'll need the following things installed on your machine.
 
 1. [Jekyll](http://jekyllrb.com/) - `$ gem install jekyll`
 2. [NodeJS](http://nodejs.org) - use the installer.
