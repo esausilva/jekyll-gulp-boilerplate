@@ -100,3 +100,11 @@ And here's a GIF showing the CSS injecting.
 ## Credits
 
 This boilerplate was built upon [shakyShane](https://github.com/shakyShane/jekyll-gulp-sass-browser-sync) starter project. 
+
+## Miscellaneous
+
+More information on [Twitter Cards](https://dev.twitter.com/cards/overview).
+
+Twitter Cards [validator tool](https://cards-dev.twitter.com/validator) lets you preview your card. 
+
+Facebook [Sharing Debugger](https://developers.facebook.com/tools/debug/) lets you preview your Open Graph tags.
