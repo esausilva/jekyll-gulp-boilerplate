@@ -4,33 +4,40 @@
   "description": "A boilerplate project including full setup for Jekyll, GulpJS, SASS, PostCSS, BrowserSync, Autoprefixer and deploy to GitHub Pages using Gulp.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV=dev gulp",
+    "deploy": "NODE_ENV=prod gulp deploy"
   },
   "author": "Esau Silva",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^6.5.1",
+    "autoprefixer": "^9.0.1",
     "browser-sync": "^2.17.5",
-    "cssnano": "^3.8.0",
-    "csswring": "^5.1.0",
-    "del": "^2.2.2",
+    "cssnano": "^4.0.3",
+    "csswring": "^7.0.0",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-postcss": "^6.2.0",
-    "gulp-sass": "^2.3.2"
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/esausilva/jekyll-gulp-boilerplate.git"
   },
-  "keywords": ["jekyll","gulp","sass","postcss","browsersync","gulp gh-pages","GitHub Pages","autoprefixer","bootstrap","jquery"],
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "postcss",
+    "browsersync",
+    "gulp gh-pages",
+    "GitHub Pages",
+    "autoprefixer",
+    "bootstrap",
+    "jquery"
+  ],
   "bugs": {
     "url": "https://github.com/esausilva/jekyll-gulp-boilerplate/issues"
   },
-  "homepage": "https://github.com/esausilva/jekyll-gulp-boilerplate",
-  "originalproject": {
-    "author": "Shane Osbourne",
-    "license": "ISC",
-    "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync" 
-  }
+  "homepage": "https://github.com/esausilva/jekyll-gulp-boilerplate"
 }

@@ -15,7 +15,7 @@ url: "http://yourusername.github.io/project" # the base hostname & protocol for 
 # Build settings
 markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json"]
-gems:
+plugins:
     - jekyll-minifier
 jekyll-minifier:
   exclude: ["assets/css/*.css","*.min.*"]
