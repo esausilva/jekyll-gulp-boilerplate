@@ -10,13 +10,25 @@ To use this starter boilerplate project, you'll need the following things instal
 
 1.  [Jekyll](http://jekyllrb.com/) - `$ gem install jekyll`
 2.  [NodeJS](http://nodejs.org) - use the installer.
-3.  [GulpJS](https://github.com/gulpjs/gulp) - `$ npm install -g gulp` (Mac users may need sudo)
-4.  [jekyll-minifier](https://github.com/digitalsparky/jekyll-minifier) - `$ gem install jekyll-minifier`
+3.  [jekyll-minifier](https://github.com/digitalsparky/jekyll-minifier) - `$ gem install jekyll-minifier`
 
 ## Local Installation
 
 1.  Clone this repo, or download it into a directory of your choice.
-2.  Inside the directory, run `npm install`.
+2.  From the root of the project
+
+```
+$ npm install
+```
+
+**Note:** This project is using `gulp-sass` and the latest version is not compatible with Node 10.x because it depends on an older version of `node-sass`. If you have Node 10.x installed, you will have to update `node-sass` dependency in `gulp-sass` directory.
+
+1. In your terminal (from the root of the project)
+
+```
+$ cd node_modules/gulp-sass
+$ npm install node-sass@latest
+```
 
 ## Usage
 
