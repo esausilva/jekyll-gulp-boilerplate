@@ -1,43 +1,43 @@
 {
-	"name": "jekyll-gulp-boilerplate",
-	"version": "0.0.1",
-	"description": "A boilerplate project including full setup for Jekyll, GulpJS, SASS, PostCSS, BrowserSync, Autoprefixer and deploy to GitHub Pages using Gulp.",
-	"main": "gulpfile.js",
-	"scripts": {
-		"dev": "NODE_ENV=dev gulp",
-		"deploy": "NODE_ENV=prod gulp deploy"
-	},
-	"author": "Esau Silva",
-	"license": "ISC",
-	"devDependencies": {
-		"autoprefixer": "^9.1.5",
-		"browser-sync": "^2.26.0",
-		"cssnano": "^4.1.4",
-		"csswring": "^7.0.0",
-		"del": "^3.0.0",
-		"gulp": "^4.0.0",
-		"gulp-gh-pages": "^0.5.4",
-		"gulp-postcss": "^8.0.0",
-		"gulp-sass": "^4.0.2"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/esausilva/jekyll-gulp-boilerplate.git"
-	},
-	"keywords": [
-		"jekyll",
-		"gulp",
-		"sass",
-		"postcss",
-		"browsersync",
-		"gulp gh-pages",
-		"GitHub Pages",
-		"autoprefixer",
-		"bootstrap",
-		"jquery"
-	],
-	"bugs": {
-		"url": "https://github.com/esausilva/jekyll-gulp-boilerplate/issues"
-	},
-	"homepage": "https://github.com/esausilva/jekyll-gulp-boilerplate"
+  "name": "jekyll-gulp-boilerplate",
+  "version": "0.0.1",
+  "description": "A boilerplate project including full setup for Jekyll, GulpJS, SASS, PostCSS, BrowserSync, Autoprefixer and deploy to GitHub Pages using Gulp.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev gulp",
+    "deploy": "NODE_ENV=prod gulp deploy"
+  },
+  "author": "Esau Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "browser-sync": "^2.26.0",
+    "cssnano": "^4.1.4",
+    "csswring": "^7.0.0",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/esausilva/jekyll-gulp-boilerplate.git"
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "postcss",
+    "browsersync",
+    "gulp gh-pages",
+    "GitHub Pages",
+    "autoprefixer",
+    "bootstrap",
+    "jquery"
+  ],
+  "bugs": {
+    "url": "https://github.com/esausilva/jekyll-gulp-boilerplate/issues"
+  },
+  "homepage": "https://github.com/esausilva/jekyll-gulp-boilerplate"
 }
