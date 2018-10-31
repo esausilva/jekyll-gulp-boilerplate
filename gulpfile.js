@@ -12,19 +12,19 @@ const del = require('del');
 const env = process.env.NODE_ENV || 'prod';
 const jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 const messages = {
-  jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
+  jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build',
 };
 
 var paths = {
   styles: {
-    src: '_scss/main.scss',
+    src: '_scss/*.scss',
     dest: '_site/assets/css',
-    destsecond: 'assets/css'
+    destsecond: 'assets/css',
   },
   scripts: {
     src: 'assets/scripts/*.js',
-    dest: '_site/assets/scripts'
-  }
+    dest: '_site/assets/scripts',
+  },
 };
 
 /**
@@ -39,8 +39,8 @@ function jekyllBuild() {
       jekyll,
       ['build', '--config', '_config.yml,_config.dev.yml'],
       {
-        stdio: 'inherit'
-      }
+        stdio: 'inherit',
+      },
     );
   }
 }
@@ -49,15 +49,15 @@ function style() {
   const processors = [
     prefix({ browsers: ['> 5%', 'last 3 versions'] }),
     csswring,
-    cssnano
+    cssnano,
   ];
   return gulp
     .src('_scss/main.scss')
     .pipe(
       sass({
         includePaths: ['scss'],
-        onError: browserSync.notify
-      })
+        onError: browserSync.notify,
+      }),
     )
     .pipe(postcss(processors))
     .pipe(gulp.dest(paths.styles.dest))
@@ -73,8 +73,8 @@ function reload(done) {
 function browserSyncServe() {
   browserSync.init({
     server: {
-      baseDir: '_site'
-    }
+      baseDir: '_site',
+    },
   });
 }
 
@@ -89,10 +89,10 @@ function watch() {
       '_data/*',
       '_includes/*',
       'assets/scripts/*.js',
-      'assets/images/*.*'
+      'assets/images/*.*',
       // './**/*.md' // causes infinite loop
     ],
-    gulp.series(jekyllBuild, reload)
+    gulp.series(jekyllBuild, reload),
   );
 }
 
@@ -118,5 +118,5 @@ gulp.task('default', gulp.parallel(jekyllBuild, browserSyncServe, watch));
  * Deploy to GitHub Pages
  */
 gulp.task('deploy', gulp.series(jekyllBuild), () =>
-  gulp.src('./_site/**/*').pipe(deploy())
+  gulp.src('./_site/**/*').pipe(deploy()),
 );
