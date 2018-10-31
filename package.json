@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "dev": "NODE_ENV=dev gulp",
-    "deploy": "NODE_ENV=prod gulp deploy"
+    "deploy": "NODE_ENV=prod gulp deploy",
+    "clean": "gulp clean"
   },
   "author": "Esau Silva",
   "license": "ISC",

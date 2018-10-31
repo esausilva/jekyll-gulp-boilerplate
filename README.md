@@ -88,7 +88,7 @@ $ npm run deploy
 After deploying run the Gulp `clean` task since while deploying `gulp-gh-pages` creates a **.publish** directory with your entire site, and in my opinion it just a waste of hard disk space to leave it alone.
 
 ```shell
-$ gulp clean
+$ npm run clean
 ```
 
 or simply _Right Click -> Delete_ that direcotry to delete it.
@@ -99,9 +99,7 @@ This is how the boilerplate template looks like.
 
 ![JPG](http://i.imgur.com/2vmwgkgl.jpg)
 
-And here's a GIF showing the CSS injecting.
-
-![GIF](http://f.cl.ly/items/373y2E0e0i2p0E2O131g/test-gif.gif)
+Link to deployed template: [https://esausilva.github.io/jekyll-gulp-boilerplate/](https://esausilva.github.io/jekyll-gulp-boilerplate/)
 
 ## Credits
 
