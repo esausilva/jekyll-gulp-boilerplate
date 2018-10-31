@@ -9,13 +9,13 @@
 title: Jekyll Gulp Boilerplate
 email: esausilva85@gmail.com
 description: A boilerplate project including full setup for Jekyll, GulpJS, SASS, PostCSS, BrowserSync, Autoprefixer and deploy to GitHub Pages using Gulp.
-baseurl: "/project" # the subpath of your site, e.g. /blog
-url: "http://yourusername.github.io/project" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: '/jekyll-gulp-boilerplate' # the subpath of your site, e.g. /blog
+url: 'http://esausilva.github.io/jekyll-gulp-boilerplate' # the base hostname & protocol for your site, e.g. http://example.com or http://[yourusername].github.io/[project]
 
 # Build settings
 markdown: kramdown
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+exclude: ['node_modules', 'gulpfile.js', 'package.json']
 plugins:
-    - jekyll-minifier
+  - jekyll-minifier
 jekyll-minifier:
-  exclude: ["assets/css/*.css","*.min.*"]
+  exclude: ['assets/css/*.css', '*.min.*']
