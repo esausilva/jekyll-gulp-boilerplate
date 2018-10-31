@@ -60,6 +60,8 @@ $ npm run deploy
 
 Something to note is that in the gulp _deploy_ task `gulp.src()` needs to be the path to your final site folder, which by default will be `_site`. If you change the `destination` in your `_config.yml` file, be sure to reflect that in your gulpfile.
 
+**Important:** Change `baseurl` and `url` in `_config.yml` to reflect your repo URL.
+
 ### Getting Your Branch Prepared
 
 ```shell
@@ -80,7 +82,7 @@ $ git checkout master
 And finally you can deploy to GitHub Pages
 
 ```shell
-$ gulp deploy
+$ npm run deploy
 ```
 
 After deploying run the Gulp `clean` task since while deploying `gulp-gh-pages` creates a **.publish** directory with your entire site, and in my opinion it just a waste of hard disk space to leave it alone.
