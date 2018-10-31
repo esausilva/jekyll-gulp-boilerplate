@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const deploy = require('gulp-gh-pages');
-const browserSync = require('browser-sync');
+const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const prefix = require('autoprefixer');
 const cp = require('child_process');
@@ -31,7 +31,6 @@ var paths = {
  * Build the Jekyll Site
  */
 function jekyllBuild() {
-  browserSync.reload();
   browserSync.notify(messages.jekyllBuild);
   if (env === 'prod') {
     return cp.spawn(jekyll, ['build'], { stdio: 'inherit' });
@@ -66,24 +65,32 @@ function style() {
     .pipe(gulp.dest(paths.styles.destsecond));
 }
 
-function reload() {
+function reload(done) {
   browserSync.reload();
+  done();
 }
 
-function watch() {
+function browserSyncServe() {
   browserSync.init({
     server: {
       baseDir: '_site'
     }
   });
-  gulp.watch('_scss/*.scss', style);
+}
+
+function watch() {
+  gulp.watch(paths.styles.src, style);
   gulp.watch(
     [
-      './**/*.html',
-      '_data/*.json',
+      '*.html',
+      '_layouts/*.html',
+      '_pages/*',
+      '_posts/*',
+      '_data/*',
+      '_includes/*',
       'assets/scripts/*.js',
-      'assets/images/*.*',
-      './**/*.md'
+      'assets/images/*.*'
+      // './**/*.md' // causes infinite loop
     ],
     gulp.series(jekyllBuild, reload)
   );
@@ -105,7 +112,7 @@ gulp.task('jekyll-rebuild', gulp.series(jekyllBuild, reload));
  * To run locally:
  * $ NODE_ENV=dev gulp
  */
-gulp.task('default', gulp.series(jekyllBuild, watch));
+gulp.task('default', gulp.parallel(jekyllBuild, browserSyncServe, watch));
 
 /**
  * Deploy to GitHub Pages
