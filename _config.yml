@@ -9,8 +9,10 @@
 title: Jekyll Gulp Boilerplate
 email: esausilva85@gmail.com
 description: A boilerplate project including full setup for Jekyll, GulpJS, SASS, PostCSS, BrowserSync, Autoprefixer and deploy to GitHub Pages using Gulp.
+
+# ** Make sure you change these when deploying to your repo **
 baseurl: '/jekyll-gulp-boilerplate' # the subpath of your site, e.g. /blog
-url: 'http://esausilva.github.io' # the base hostname & protocol for your site, e.g. http://example.com or http://[yourusername].github.io/[project]
+url: 'http://esausilva.github.io' # the base hostname & protocol for your site, e.g. http://example.com or http://[yourusername].github.io
 
 # Build settings
 markdown: kramdown

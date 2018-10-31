@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const deploy = require('gulp-gh-pages');
+const ghpages = require('gulp-gh-pages');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const prefix = require('autoprefixer');
@@ -117,6 +117,8 @@ gulp.task('default', gulp.parallel(jekyllBuild, browserSyncServe, watch));
 /**
  * Deploy to GitHub Pages
  */
-gulp.task('deploy', gulp.series(jekyllBuild), () =>
-  gulp.src('./_site/**/*').pipe(deploy()),
-);
+function deploy() {
+  return gulp.src('./_site/**/*').pipe(ghpages());
+}
+
+gulp.task('deploy', gulp.series(jekyllBuild, gulp.parallel(deploy)));
