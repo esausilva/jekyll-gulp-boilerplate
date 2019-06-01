@@ -9,14 +9,14 @@
     "clean": "gulp clean"
   },
   "author": "Esau Silva",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^9.1.5",
-    "browser-sync": "^2.26.0",
-    "cssnano": "^4.1.4",
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.5",
+    "cssnano": "^4.1.10",
     "csswring": "^7.0.0",
-    "del": "^3.0.0",
-    "gulp": "^4.0.0",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
     "gulp-gh-pages": "^0.6.0-6",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2"

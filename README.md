@@ -91,7 +91,7 @@ After deploying run the Gulp `clean` task since while deploying `gulp-gh-pages` 
 $ npm run clean
 ```
 
-or simply _Right Click -> Delete_ that direcotry to delete it.
+or simply _Right Click -> Delete_ that directory to delete it.
 
 ## Screenshots
 
@@ -112,3 +112,11 @@ More information on [Twitter Cards](https://dev.twitter.com/cards/overview).
 Twitter Cards [validator tool](https://cards-dev.twitter.com/validator) lets you preview your card.
 
 Facebook [Sharing Debugger](https://developers.facebook.com/tools/debug/) lets you preview your Open Graph tags.
+
+## Giving Back
+
+If you would like to support my work and the time I put in making tutorials, you can click the image below to get me a coffee. I would really appreciate it (but is not required).
+
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/esausilva)
+
+-Esau Silva
