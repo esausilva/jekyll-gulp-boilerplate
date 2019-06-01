@@ -5,7 +5,6 @@ const sass = require('gulp-sass');
 const prefix = require('autoprefixer');
 const cp = require('child_process');
 const postcss = require('gulp-postcss');
-const csswring = require('csswring');
 const cssnano = require('cssnano');
 const del = require('del');
 
@@ -48,7 +47,6 @@ function jekyllBuild() {
 function style() {
   const processors = [
     prefix({ browsers: ['> 5%', 'last 3 versions'] }),
-    csswring,
     cssnano,
   ];
   return gulp
